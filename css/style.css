@@ -742,23 +742,13 @@ ul.email li i {
 /** about section **/
 
 .about {
-  background: url(../images/about_bg.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding-top: 90px;
-}
-
-.about .titlepage {
-  padding-bottom: 0;
-  max-width: 554px;
-  float: right;
+  text-align: center; /* Căn giữa nội dung trong phần tử .about */
 }
 
 .about .titlepage h2 {
   padding-bottom: 30px;
   color: #fff;
+  text-align: center; /* Đảm bảo tiêu đề được căn giữa */
 }
 
 .about .titlepage p {
@@ -767,17 +757,25 @@ ul.email li i {
   line-height: 30px;
   color: #fff;
   padding-bottom: 29px;
+  text-align: center; /* Đảm bảo văn bản được căn giữa */
+}
+
+.about_img {
+  display: flex; /* Sử dụng Flexbox để căn giữa hình ảnh */
+  justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
+  align-items: center; /* Căn giữa hình ảnh theo chiều dọc (nếu cần) */
+  text-align: center; /* Căn giữa nội dung trong phần tử */
 }
 
 .about_img figure {
-  margin: 0;
+  margin: 0; /* Loại bỏ khoảng cách mặc định của figure */
 }
 
 .about_img figure img {
-  width: 400px; /* Đặt chiều rộng của hình ảnh là 200px */
+  width: 400px; /* Đặt chiều rộng của hình ảnh */
   height: auto; /* Đảm bảo tỷ lệ khung hình được bảo toàn */
   display: block; /* Để tránh lỗi khoảng trắng dưới ảnh */
-  margin-bottom: 30px; /* Căn chỉnh khoảng cách dưới ảnh */
+  margin-bottom: 30px; /* Khoảng cách dưới ảnh */
 }
 
 .about .read_more {
